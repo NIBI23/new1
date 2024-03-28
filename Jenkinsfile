@@ -12,8 +12,8 @@ pipeline {
         stage('Push docker images') {
             steps {
                 script {
-                    sh 'chmod +x deploy.sh'
-                    sh './deploy.sh'
+                    sh 'chmod +x build/deploy.sh'
+                    sh './build/deploy.sh'
                 }
             }
         }
